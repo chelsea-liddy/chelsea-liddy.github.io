@@ -3,11 +3,10 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
   grid-template-areas:
   "header header header"
-  "nav nav nav"
   "left-content left-content right-content-1"
   "left-content left-content right-content-2"
   "footer footer footer";
@@ -15,20 +14,34 @@
   padding: 50px;
   box-sizing: border-box;
 }
-
+/*Main content of page will stack vertically for screens smaller than 700px*/
 @media(max-width:700px) {
   .grid-container {
     grid-template-areas:
     "header header header"
-    "nav nav nav"
     "right-content-1 right-content-1 right-content-1"
     "left-content left-content left-content"
     "right-content-2 right-content-2 right-content-2"
     "footer footer footer";
   }
+  
 }
 
-
+.grid-container-blog {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+  grid-template-areas:
+  "header"
+  "nav"
+  "article"
+  "footer";
+  gap: 10px;
+  padding: 50px 200px 50px 200px;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0px;
@@ -40,7 +53,8 @@ body {
   grid-area: header;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
+  margin: 10px;
+  padding: 15px;
 }
 
 .main-heading {
@@ -75,18 +89,22 @@ body {
 }
 
 .content-title {
-  margin: 15px;
+  margin: 0;
+  padding: 15px;
   font-weight: 400;
   text-align: center;
   text-decoration: underline dashed white;
 }
 
 
+
 .content-text {
   font-weight: 400;
-  margin: 15px;
-  box-sizing: content-box;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
 }
+
 
 .left-content {
   grid-area: left-content;
@@ -106,7 +124,7 @@ body {
   border-radius: 30px;
 }
 
-.connect-list {
+.content-list {
   text-align: center;
   list-style-type: none;
   margin: 0;
@@ -132,9 +150,15 @@ body {
   padding: 20px;
 }
 
+.article {
+  grid-area: article;
+  background-color: #d8e5de;
+  border-radius: 30px;
+}
 
-
-
+.ital {
+  font-style: italic;
+}
 
 
 
