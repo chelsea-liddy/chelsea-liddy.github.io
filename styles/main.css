@@ -16,27 +16,36 @@ body {
 }
 
 .header {  
-  border-bottom: dashed #d8e5de;
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row: 1;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  margin: 8px;
+  margin: 20px 8px 20px 8px;
+}
+
+.nav {
+  text-align: center;
+  margin: 20px;
+  font-family: 'Raleway', sans-serif; 
+  font-weight: 400;
 }
 
 .main-heading {
-  margin-bottom: 10px;
+  margin: 0px 0px 5px 0px;
+  text-decoration: underline dashed #d8e5de;
 }
 .sub-heading {
   font-style: italic;
-  margin-top: 10px;
+  text-decoration: underline dashed #d8e5de;
+  margin: 0px 0px 10px 0px;
 }
 
 .content-title {
   margin: 15px;
   font-weight: 400;
   text-align: center;
+  text-decoration: underline dashed white;
 }
 
 .content-text {
