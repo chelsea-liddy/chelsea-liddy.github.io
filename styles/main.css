@@ -3,8 +3,8 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 130px 1fr 1fr 1fr 70px;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
   "header header header"
   "nav nav nav"
@@ -15,6 +15,20 @@
   padding: 50px;
   box-sizing: border-box;
 }
+
+@media(max-width:700px) {
+  .grid-container {
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "right-content-1 right-content-1 right-content-1"
+    "left-content left-content left-content"
+    "right-content-2 right-content-2 right-content-2"
+    "footer footer footer";
+  }
+}
+
+
 
 body {
   margin: 0px;
@@ -37,12 +51,13 @@ body {
 .sub-heading {
   font-style: italic;
   text-decoration: underline dashed #d8e5de;
-  margin: 0px 0px 10px 0px;
+  padding: 5px;
+  margin: 0;
 }
 
 .nav {
   grid-area: nav;
-  padding: 25px;
+  padding: 10px;
   text-align: center
 }
 
