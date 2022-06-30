@@ -98,7 +98,7 @@ body {
 
 
 
-.content-text {
+.index-content-text {
   font-weight: 400;
   padding: 15px;
   margin: 0;
@@ -156,6 +156,12 @@ body {
   border-radius: 30px;
 }
 
+.content-text {
+  font-weight: 400;
+  padding: 15px;
+  margin: 0;
+  text-align: left;
+}
 .ital {
   font-style: italic;
 }
