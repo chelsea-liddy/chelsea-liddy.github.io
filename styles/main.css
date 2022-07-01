@@ -30,13 +30,13 @@
   "article"
   "footer";
   gap: 10px;
-  padding: 50px 100px 50px 100px;
+  padding: 50px;
   margin: 0;
   box-sizing: border-box;
   justify-content: center;
 }
 
-/*make grid elements stack in specific vertical order for screens less than 768px*/
+/*make grid elements stack in specific vertical order and decrease padding of blog for screens less than 768px*/
 @media(max-width:768px) {
   .grid-container {
     grid-template-areas:
@@ -48,6 +48,9 @@
     "footer footer footer";
 
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  }
+  .grid-container-blog {
+    padding: 10px;
   }
 }
 
@@ -68,9 +71,11 @@
   .content-text {
     font-size: 14px;
   }
+
   .grid-container-blog {
-    padding: 15px;
+    padding: 5px;
   }
+  
 }
 
 /*increase padding and font sizes for desktop*/
@@ -217,9 +222,7 @@ body {
   grid-area: article;
   background-color: #d8e5de;
   border-radius: 30px;
-  margin: 10px;
-  padding: 20px 60px 20px 60px;
-  
+  margin: 10px;  
 }
 
 .image-container {
@@ -237,6 +240,7 @@ body {
   font-weight: 400;
   margin: 0;
   text-align: left;
+  padding: 15px;
 }
 .ital {
   font-style: italic;
