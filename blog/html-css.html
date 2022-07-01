@@ -36,22 +36,26 @@
             <li>When a <b>border</b> is added, it creates space around the padding. It is transparent by default, but it can be made visible with styling.</li><br>
             <li>A <b>margin</b> creates more space around the border, and like the padding, it is transparent.</li><br>
           </ul>    
-          <p class= "content-text">This concept is visualised in the following image.</p>
-          <figure class="image-container"><img src="../images/box-model.JPG" alt="a picture of the CSS Box Model"><figcaption>Image from <a href="https://www.w3schools.com/css/css_boxmodel.asp">W3schools</a></figcaption>
-          </figure>
-          <p class="content-text">
-           <br><br>Let's take it step by step with an example of a Heading. The image below shows the HTML code to create an h1 element called “Heading” on the left, and how it displays in a browser on the right.</p>
-           <figure class="image-container"><img src="../images/heading-only.JPG" alt="an image showing the HTML code for a heading on the left and the browser view on the right"></figure>
+          <p class= "content-text">This concept is visualised in the following image:</p>
+          <div class="image-container"><img class="blog-image" src="../images/box-model.JPG" alt="a picture of the CSS Box Model"><figcaption>Image from <a href="https://www.w3schools.com/css/css_boxmodel.asp">W3schools</a></figcaption>
+          </div><br>
+          <p class="content-text">Let's take it step by step with an example of a Heading. The image below shows the HTML code to create an h1 element called “Heading” on the left, and how it displays in a browser on the right.</p>
+          <div class="image-container"><img class="blog-image" src="../images/heading-only.JPG" alt="an image showing the HTML code for a heading on the left and the browser view on the right">
+          </div>
            <p class="content-text">The Heading is very close to the tope and left of the page, because there is only a small (8 pixel) margin added by default by the browser. <br<br>Now let's apply the Box Model, working
           from the outside in! <br><br>Using CSS, I am going to add a <b>margin</b> of 50 pixels.</p>
-          <figure class="image-container"><img src="../images/margin-only.JPG" alt="an image showing the CSS code for a margin on the left and the browser view on the right"></figure>
+          <div class="image-container"><img class="blog-image" src="../images/margin-only.JPG" alt="an image showing the CSS code for a margin on the left and the browser view on the right">
+          </div>
           <p class="content-text">The Heading has moved down the page and to the right, because there is now a large margin around it, separating it away from the edges of the browser window. <br><br>
           Now let's add a solid <b>border</b> that is 20 pixels thick.</p>
-          <figure class="image-container"><img src="../images/margin-border.JPG" alt="an image showing the CSS code for a margin and border and the browser view on the right"></figure>
+          <div class="image-container"><img class="blog-image" src="../images/margin-border.JPG" alt="an image showing the CSS code for a margin and border and the browser view on the right">
+          </div>
           <p class="content-text">You can see that the border has taken up space between the content and the margin we created just before. <br><br>You'll also notice that the border is very close to the heading. That can
           be solved with the final component of the Box Model - the <b>padding</b>.</p>
-          <figure class="image-container"><img src="../images/margin-border-padding.JPG" alt="an image showing the CSS code for a margin, border and padding on the left and the browser view on the right"></figure> 
-          <p class="content-text">As you can see, the 20 pixels of padding has created space between the Heading (our content) and the border.</p>
+          <div class="image-container"><img class="blog-image" src="../images/margin-border-padding.JPG" alt="an image showing the CSS code for a margin, border and padding on the left and the browser view on the right">
+          </div>
+          <p class="content-text">As you can see, the 20 pixels of padding has created space between the Heading (our content) and the border.<br><br> To summarise, margins, borders and paddings are extremely important
+          CSS properties as they are used to create and define space and elements on a webpage.</p>
            
       </div>
       
