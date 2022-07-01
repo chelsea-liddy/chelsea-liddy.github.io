@@ -217,6 +217,7 @@ body {
   grid-area: article;
   background-color: #d8e5de;
   border-radius: 30px;
+  margin: 10px;
 }
 
 .content-text {
