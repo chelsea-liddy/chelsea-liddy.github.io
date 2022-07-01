@@ -29,14 +29,17 @@
       <div class="article">
         <h2 class="content-title">Margins, Borders and Padding in CSS</h2>
           <p class="content-text">An important concept to understand when working with Cascading Style Sheets (CSS) is the Box Model.<br><br> 
-            Each piece of content on a webpage is a box can be wrapped within three other boxes. These three other boxes are: padding, border and margin.<br><br>
-            This concept is visualised in the following image. 
-          </p>
+            Each piece of content on a webpage is a box can be wrapped within three other boxes. These three other boxes are: padding, border and margin.</p> 
+          <ul>
+            <li>The <b>content</b> is the actual element that exists in an HTML file, such as a Heading. In HTML this is called an h1 element.</li><br>
+            <li>When <b>padding</b> is added, it creates transparent space around the content.</li><br>
+            <li>When a <b>border</b> is added, it creates space around the padding. It is transparent by default, but it can be made visible with styling.</li><br>
+            <li>A <b>margin</b> creates more space around the border, and like the padding, it is transparent.</li><br>
+          </ul>    
+          <p class= "content-text">This concept is visualised in the following image.</p>
           <figure class="image-container"><img src="../images/box-model.JPG" alt="a picture of the CSS Box Model"><figcaption>Image from <a href="https://www.w3schools.com/css/css_boxmodel.asp">W3schools</a></figcaption>
           </figure>
-          <p class="content-text">The <b>content</b> is the actual element that exists in an HTML file, such as a Heading. In HTML this is called an h1 element. <br><br>When <b>padding</b> is added, it creates
-            transparent space around the content. <br><br>When a <b>border</b> is added, it creates space around the padding. It is transparent by default, but it can be made visible with styling. <br><br>
-            A <b>margin</b> creates more space around the border, and like the padding, it is transparent. 
+          <p class="content-text">
            <br><br>Let's take it step by step with an example of a Heading. The image below shows the HTML code to create an h1 element called “Heading” on the left, and how it displays in a browser on the right.</p>
            <figure class="image-container"><img src="../images/heading-only.JPG" alt="an image showing the HTML code for a heading on the left and the browser view on the right"></figure>
            <p class="content-text">The Heading is very close to the tope and left of the page, because there is only a small (8 pixel) margin added by default by the browser. <br<br>Now let's apply the Box Model, working
