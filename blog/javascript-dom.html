@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Chelsea Liddy | Margins, Borders and Padding in CSS</title>
+    <title>Chelsea Liddy | JavaScript Fundamentals</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,15 +27,61 @@
         </div>
       
       <!--BLOG CONTENT-->
+
+      <!--SECTION 1-->
       <div class="article">
+
         <h2 class="content-title">JavaScript Fundamentals</h2>
-          <p class="content-text"></p>   
-          <div class="image-container"><img class="blog-image" src="../images/box-model.JPG" alt="a picture of the CSS Box Model"><figcaption>Image from <a href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">W3schools</a></figcaption>
-          </div>
-          <p class="content-text">Let's take it step by step with an example of a Heading. The image below shows the HTML code to create an h1 element called “Heading” on the left, and how it displays in a browser on the right.</p>
+
+        <h3 class="content-sub-title">The relationship between HTML, CSS and Javascript</h3>
+
+        <p class="content-text">Website are mostly built from three languages - HTML, CSS and Javascript. In fact, these languages are often referred to as the 'building blocks of the web'. I'm going to break down what each of these languages do by thinking about a pop-up book.</p>   
+
+        <div class="image-container"><img class="small-image" src="../images/popup.jpg" alt="a picture of an Alice in Wonderland pop-up book"></div>
+
+        <p class="content-text"><b>HTML - What's in it?</b><br><br> HTML stands for Hyper Text Markup Language and it is the language we use to get content and the structure of that content, onto the page of a website. We can use HTML to instruct our browser to display things like a page heading, a sub-heading, paragraphs, pictures and lists. We use HTML to control the order those things appear in, and the actual words and pictures that are included.<br><br> In our pop-up book analogy, HTML would be responsible for the fact that the book has a title on the cover, maybe a dedication on the next page, and then some paragraphs on each page that follows.</p>
+
+        <p class="content-text"><b>CSS - How does it look?</b><br><br> CSS stands for Cascading Style Sheets and is the language we use to instruct our browser how the page and the content of our website should look. We can control where on the page things are positioned, how much space each thing has around it what colour they are, what the colour of the background is, what fonts are used and so on.<br><br> Without the CSS, our book would look pretty plain - in fact, other than the original content, it would look almost exactly the same as every other book that has only used HTML so far. The CSS means that our book has colour, patterns and different fonts - in short, it looks beautiful and pretty unique!</p>
+
+        <p class ="content-text"><b>JavaScript - What does it do?</b><br><br> JavaScript is a programming language that can access the things put in place on a page with HTML and CSS, and make them change under certain conditions. JavaScript is what makes things on a website respond to certain events and to allow users of the website to interact with it.<br><br> For our pop-up book, JavaScript is what distinguishes our book from being just an ordinary picture book. Turning the page is an event or an interaction which causes a portion of the page to pop-up when that event happens. If the page isn't turned, that portion of the page doesn't move or change. </p>  
         
-           
+        <h3 class="content-sub-title">Control flows and loops</h3>
+
+        <p class ="content-text">JavaScript code typically works from top to bottom when it is executing. Control flow is used in JavaScript to change this behaviour and determine which part of the code should run, and when. <br><br>One tool in control flow is the use of conditional statements. Conditional statements allow us to only have a piece of code run if a certain condition is met. <br><br> For example: <br><br>If the button is clicked once, run the code that displays a message saying "Click!"<br> If the button is not clicked, do not run the code.<br><br> Loops are a type of conditional statement that enable repetition in the code when certain conditions are met, without the code having to be written out multiple times. With a loops, we can move through collections of data and make different actions happen with that data when we want them to.<br><br>Humans use control flow because we adapt to the conditions around us. Let's think about going skiing.</p>
+
+        <div class="image-container"><img class="small-image" src="../images/skiing.jpg" alt="a picture of Bridget Jones falling over while skiing"></div>
+
+        <p class="content-text">If there was no control flow involved:<br><br>1. Ride chairlift to the top<br>2. Ski to the bottom. <br><br>However, this isn't practical because certain conditions might make the experience better or worse and we might want to do a second run, depending on how we feel or what the time is.<br><br> With control flow involved, skiing actually looks more like this:<br><br>1. Check if the conditions on the mountain are good. If they are, travel to the ski-field. If they aren't, think of something else to do today. <br>2. Is the chair lift working? If it is, get on it. If it isn't, ask for a refund and go home or wait around to see if it gets fixed.<br> 3. Are your skills best matched to run A or run B? Then do the run that matches your skill level. <br>4. Once you are at the bottom, decide whether you have a) enough time and b) enough energy to do another run. As long as you have enough, keep doing runs. When you don't have enough of either of them, stop doing runs.<br><br> In short, control flow means that processes become dynamic and adaptable as opposed to static. When used in Javascript, we end up with websites that are responsive, interesting and varied.</p>
+
+        <h3 class="content-sub-title">What is the DOM?</h3>
+
+        <p class="content-text">The Document Object Model, frequently shortened to the DOM, is a programming interface that organises a web page into a structure of things called nodes. Nodes can have parents and children.<br><br>The DOM is often represented like a family tree, so lets set up a document in HTML and then picture it as a family tree.</p>
+
+        <div class="image-container"><img class="blog-image" src="../images/dom-tree.png" alt="a picture of basic HTML code on the left and the elements represented in a tree structure on the right"></div>
+
+        <p class="content-text">As you can see, the document is the root, which is a parent to the HTML, which has two children, the head and the body. The head has one child, the title. It's sibling, the body, has three children, an h1, a p and an ul. The ul is the parent to two li children. <br><br>We can interact with the DOM in JavaScript and doing so allows us to access nodes from the structure and manipulate them.</p>
+
+        <div class="image-container"><img class="blog-image" src="../images/dom-manipulation.JPG" alt="a picture of basic HTML code on the left, JavaScript in the middle and a webpage on the right"></div>
+
+        <p class="content-text">In the picture above, you will see that in the index.html document the h1 has been set to 'My Blog Page'. However, in the index.js file next to it, I have accessed that h1 element by its ID of 'heading' and told it to change the inner HTML of that element to read 'Hello!' instead.</p>
+
+        <h3 class="content-sub-title">Arrays and Objects</h3>
+
+        <p class="content-text">To understand arrays and objects in JavaScript, we first need to understand variables. Variables are containers for storing data values and are typically created in this way:<br><br>let names = ["Jennifer", "Cameron", "Sam", "Thomas", "Lilly"]<br><br>Most importantly, each item in that array is given an index position, starting from 0. If I wanted to access Thomas' name later on in my script, I would need to refer to it as:<br><br>names[3] <br><br>Objects are constructed slightly differently, in that under one variable name, other variables are listed in value pairs. If I wanted to store details about myself in an object, it would look like this:<br><br>let myDetails = {firstName: "Chelsea", lastName: "Liddy", age: 30, location: "Christchurch"}<br><br> The data is not all of the same type and there are value pairs inside the object.<br><br> To access my age, I first specify that I want the myDetails object, then that I want the age value. This would look like:<br><br>myDetails.age</p>
+
+        <h3 class="content-sub-title">Functions</h3>
+
+        <p class="content-text">Functions in JavaScript are sets of statements that are created under one name. The statements make up the instructions for how to perform a certain task.<br><br> A function is first 'defined' (the instructions are written out) and then when that function needs to be run, it is 'called'.  Here is an example of a JavaScript function from a challenge we carried out this week:</p>
+
+        <div class="image-container"><img class="blog-image" src="../images/javascript-function.JPG" alt="a picture of a function in JavaScript"></div>
+
+        <p class="content-text">First, the function was defined - it was given a name of 'displayProducts', then it was given precise instructions within the {} brackets.<br><br> Then outside of the {} brackets, we called function by using its name and () - displayProducts (). Only once the function was called, were instructions we gave carried out.<br><br>Functions are incredibly useful because they allow us to write instructions once, and then carry them out multiple times without having to write the instructions out all over again. All we have to do to use that function again is call it again! </p>
+
       </div>
+
+      <!--SECTION 2-->
+      >
+  
       
       <!--FOOTER-->
       <div class="footer">
