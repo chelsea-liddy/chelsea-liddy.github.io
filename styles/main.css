@@ -179,7 +179,9 @@ li {
   max-width: 100%;
 }
 
-
+#alice-image {
+  max-width: 100%;
+}
 
 .content-text {
   font-weight: 400;
@@ -263,6 +265,10 @@ figcaption {
 
   .image-container {
     padding: 40px;
+  }
+
+  #alice-image {
+    max-width: 60%;
   }
   
 }
