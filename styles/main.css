@@ -190,6 +190,12 @@ li {
   padding: 15px;
   font-size: 16px;
 }
+
+li {
+  font-size: 16px;
+  padding: 10px;
+}
+
 .ital {
   font-style: italic;
 }
@@ -237,6 +243,10 @@ figcaption {
     font-size: 14px;
   }
 
+  li {
+    font-size: 14px;
+  }
+
   .grid-container-blog {
     padding: 5px;
   }
@@ -260,6 +270,10 @@ figcaption {
     font-size: 28px;
   }
   .content-text {
+    font-size: 18px;
+  }
+
+  li {
     font-size: 18px;
   }
 
