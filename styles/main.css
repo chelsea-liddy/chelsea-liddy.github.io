@@ -36,7 +36,24 @@
   justify-content: center;
 }
 
-
+.grid-container-learning-plan {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-areas:
+  "header"
+  "nav"
+  "section1"
+  "section2"
+  "footer";
+  gap: 10px;
+  padding: 50px;
+  margin: 0;
+  box-sizing: border-box;
+  justify-content: center;
+}
 
 body {
   margin: 0;
@@ -170,6 +187,22 @@ li {
   margin: 10px;  
 }
 
+.section1 {
+  grid-area: section1;
+  background-color: #d8e5de;
+  border-radius: 30px;
+  margin: 10px;  
+}
+
+
+.section2 {
+  grid-area: section2;
+  background-color: #d8e5de;
+  border-radius: 30px;
+  margin: 10px;  
+  }
+
+
 .image-container {
   display: block;
   text-align: center;
@@ -224,6 +257,9 @@ figcaption {
   .grid-container-blog {
     padding: 10px;
   }
+  .grid-container-learning-plan {
+    padding: 10px;
+  }
 }
 
 /*decrease padding, images and font sizes for mobiles*/
@@ -251,6 +287,10 @@ figcaption {
   .grid-container-blog {
     padding: 5px;
   }
+
+  .grid-container-learning-plan {
+    padding: 5px;
+  }
   
 }
 
@@ -261,6 +301,10 @@ figcaption {
     padding-right: 100px;
   }
   .grid-container-blog {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .grid-container-learning-plan {
     padding-left: 200px;
     padding-right: 200px;
   }
